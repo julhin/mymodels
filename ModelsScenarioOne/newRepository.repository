@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ASCII"?>
+<repository:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:seff="http://palladiosimulator.org/PalladioComponentModel/SEFF/5.2" id="_Qi69MGKCEei9j4VfREavAA" entityName="New Repository">
+  <components__Repository xsi:type="repository:BasicComponent" id="_GS09oGNXEei0NY8kszC3ZA" entityName="PickUp Shop">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_IMPWsGOhEei0NY8kszC3ZA" entityName="IStockManagerInterface" providedInterface__OperationProvidedRole="_FSrvoGOhEei0NY8kszC3ZA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_QkOfsGN9Eei0NY8kszC3ZA" entityName="" requiredInterface__OperationRequiredRole="_ydzwoGN6Eei0NY8kszC3ZA"/>
+    <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_LWJDEGPyEeiX4OZNgAATFw" describedService__SEFF="_JETSYGPpEeiX4OZNgAATFw">
+      <steps_Behaviour xsi:type="seff:StartAction" id="_L7RJYGPyEeiX4OZNgAATFw" successor_AbstractAction="_L7RJYWPyEeiX4OZNgAATFw"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_L7RJYWPyEeiX4OZNgAATFw" predecessor_AbstractAction="_L7RJYGPyEeiX4OZNgAATFw"/>
+    </serviceEffectSpecifications__BasicComponent>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_5o5yQGNiEei0NY8kszC3ZA" entityName="Webservice::Inventory">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_QCoOgGN9Eei0NY8kszC3ZA" entityName="IStoreManager" providedInterface__OperationProvidedRole="_ydzwoGN6Eei0NY8kszC3ZA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_YpxVYGN7Eei0NY8kszC3ZA" entityName="" requiredInterface__OperationRequiredRole="_LVjtUGN7Eei0NY8kszC3ZA"/>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_paPq8GNlEei0NY8kszC3ZA" entityName="Service Adapter">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_hs3hAGOQEei0NY8kszC3ZA" entityName="" providedInterface__OperationProvidedRole="_NQhlMGN7Eei0NY8kszC3ZA"/>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_v9MzEGOQEei0NY8kszC3ZA" entityName="Tradingsystem::inventory:data">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_BNnK8GOREei0NY8kszC3ZA" entityName="IStoreQuery" providedInterface__OperationProvidedRole="_7rsagGOQEei0NY8kszC3ZA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_CE4KIGOREei0NY8kszC3ZA" entityName="" requiredInterface__OperationRequiredRole="_NQhlMGN7Eei0NY8kszC3ZA"/>
+  </components__Repository>
+  <components__Repository xsi:type="repository:BasicComponent" id="_xDUGkGOQEei0NY8kszC3ZA" entityName="Tradingsystem::inventory:application">
+    <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_2idP0GOQEei0NY8kszC3ZA" entityName="IStoreInventoryManager" providedInterface__OperationProvidedRole="_LVjtUGN7Eei0NY8kszC3ZA"/>
+    <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="__Yh4oGOQEei0NY8kszC3ZA" entityName="" requiredInterface__OperationRequiredRole="_7rsagGOQEei0NY8kszC3ZA"/>
+  </components__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_ydzwoGN6Eei0NY8kszC3ZA" entityName="IStoreManager">
+    <signatures__OperationInterface id="_Wf-icGPrEeiX4OZNgAATFw" entityName="createReport" returnType__OperationSignature="_Ei99MGOREei0NY8kszC3ZA">
+      <parameters__OperationSignature dataType__Parameter="_LhvGIGOREei0NY8kszC3ZA" parameterName="id"/>
+    </signatures__OperationInterface>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_LVjtUGN7Eei0NY8kszC3ZA" entityName="IStoreInventoryManager">
+    <signatures__OperationInterface id="_BODDoGPwEeiX4OZNgAATFw" entityName="createReport" returnType__OperationSignature="_Ei99MGOREei0NY8kszC3ZA"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_NQhlMGN7Eei0NY8kszC3ZA" entityName="ServiceAdapter">
+    <signatures__OperationInterface id="_N1PYMGPxEeiX4OZNgAATFw" entityName="executeQuery"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_7rsagGOQEei0NY8kszC3ZA" entityName="IStoreQuery">
+    <signatures__OperationInterface id="_M97yMGPwEeiX4OZNgAATFw" entityName="createReportQuery" returnType__OperationSignature="_i8CNYGOREei0NY8kszC3ZA"/>
+  </interfaces__Repository>
+  <interfaces__Repository xsi:type="repository:OperationInterface" id="_FSrvoGOhEei0NY8kszC3ZA" entityName="IStockmanagerInterface">
+    <signatures__OperationInterface id="_JETSYGPpEeiX4OZNgAATFw" entityName="createReport " returnType__OperationSignature="_Ei99MGOREei0NY8kszC3ZA"/>
+  </interfaces__Repository>
+  <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_Ei99MGOREei0NY8kszC3ZA" entityName="Report" innerType_CollectionDataType="_OLVdoGPpEeiX4OZNgAATFw"/>
+  <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_LhvGIGOREei0NY8kszC3ZA" entityName="ID">
+    <innerType_CollectionDataType xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.0"/>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_P2L94GOREei0NY8kszC3ZA" entityName="query">
+    <innerType_CollectionDataType xsi:type="repository:PrimitiveDataType" href="pathmap://PCM_MODELS/PrimitiveTypes.repository#//@dataTypes__Repository.1"/>
+  </dataTypes__Repository>
+  <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_i8CNYGOREei0NY8kszC3ZA" entityName="List&lt;IOrderEntries>" innerType_CollectionDataType="_i8CNYGOREei0NY8kszC3ZA"/>
+  <dataTypes__Repository xsi:type="repository:CollectionDataType" id="_OLVdoGPpEeiX4OZNgAATFw" entityName="Report" innerType_CollectionDataType="_Ei99MGOREei0NY8kszC3ZA"/>
+</repository:Repository>

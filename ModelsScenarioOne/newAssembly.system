@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ASCII"?>
+<system:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:composition="http://palladiosimulator.org/PalladioComponentModel/Core/Composition/5.2" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:system="http://palladiosimulator.org/PalladioComponentModel/System/5.2" id="_2F9v0GOKEei0NY8kszC3ZA" entityName="ScenarioOne">
+  <assemblyContexts__ComposedStructure id="_HVExEGOUEei0NY8kszC3ZA" entityName="PickUp Shop">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="newRepository.repository#_GS09oGNXEei0NY8kszC3ZA"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_U-_jYGOUEei0NY8kszC3ZA" entityName="Assembly_Webservice::Inventory">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="newRepository.repository#_5o5yQGNiEei0NY8kszC3ZA"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_XccdQGOUEei0NY8kszC3ZA" entityName="Assembly_Tradingsystem::inventory:data">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="newRepository.repository#_v9MzEGOQEei0NY8kszC3ZA"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_Yp4gwGOUEei0NY8kszC3ZA" entityName="Assembly_Tradingsystem::inventory:application">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="newRepository.repository#_xDUGkGOQEei0NY8kszC3ZA"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_ZbbScGOUEei0NY8kszC3ZA" entityName="Assembly_Service Adapter">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="newRepository.repository#_paPq8GNlEei0NY8kszC3ZA"/>
+  </assemblyContexts__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_fFeEIGOUEei0NY8kszC3ZA" entityName="newAssemblyConnector" requiringAssemblyContext_AssemblyConnector="_HVExEGOUEei0NY8kszC3ZA" providingAssemblyContext_AssemblyConnector="_U-_jYGOUEei0NY8kszC3ZA">
+    <providedRole_AssemblyConnector href="newRepository.repository#_QCoOgGN9Eei0NY8kszC3ZA"/>
+    <requiredRole_AssemblyConnector href="newRepository.repository#_QkOfsGN9Eei0NY8kszC3ZA"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_hC_gwGOUEei0NY8kszC3ZA" entityName="newAssemblyConnector" requiringAssemblyContext_AssemblyConnector="_U-_jYGOUEei0NY8kszC3ZA" providingAssemblyContext_AssemblyConnector="_Yp4gwGOUEei0NY8kszC3ZA">
+    <providedRole_AssemblyConnector href="newRepository.repository#_2idP0GOQEei0NY8kszC3ZA"/>
+    <requiredRole_AssemblyConnector href="newRepository.repository#_YpxVYGN7Eei0NY8kszC3ZA"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_nEa3sGOUEei0NY8kszC3ZA" entityName="newAssemblyConnector" requiringAssemblyContext_AssemblyConnector="_Yp4gwGOUEei0NY8kszC3ZA" providingAssemblyContext_AssemblyConnector="_XccdQGOUEei0NY8kszC3ZA">
+    <providedRole_AssemblyConnector href="newRepository.repository#_BNnK8GOREei0NY8kszC3ZA"/>
+    <requiredRole_AssemblyConnector href="newRepository.repository#__Yh4oGOQEei0NY8kszC3ZA"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_wYayoGOUEei0NY8kszC3ZA" entityName="newAssemblyConnector" requiringAssemblyContext_AssemblyConnector="_XccdQGOUEei0NY8kszC3ZA" providingAssemblyContext_AssemblyConnector="_ZbbScGOUEei0NY8kszC3ZA">
+    <providedRole_AssemblyConnector href="newRepository.repository#_hs3hAGOQEei0NY8kszC3ZA"/>
+    <requiredRole_AssemblyConnector href="newRepository.repository#_CE4KIGOREei0NY8kszC3ZA"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:ProvidedDelegationConnector" id="_TM9SIGOhEei0NY8kszC3ZA" entityName="newProvidedDelegationConnector" outerProvidedRole_ProvidedDelegationConnector="_6NRhcGOgEei0NY8kszC3ZA" assemblyContext_ProvidedDelegationConnector="_HVExEGOUEei0NY8kszC3ZA">
+    <innerProvidedRole_ProvidedDelegationConnector href="newRepository.repository#_IMPWsGOhEei0NY8kszC3ZA"/>
+  </connectors__ComposedStructure>
+  <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_6NRhcGOgEei0NY8kszC3ZA" entityName="IStockmanagerInterface">
+    <providedInterface__OperationProvidedRole href="newRepository.repository#_ydzwoGN6Eei0NY8kszC3ZA"/>
+  </providedRoles_InterfaceProvidingEntity>
+</system:System>

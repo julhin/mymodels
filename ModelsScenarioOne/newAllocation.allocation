@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<allocation:Allocation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:allocation="http://palladiosimulator.org/PalladioComponentModel/Allocation/5.2" id="_MlBgYGOXEei0NY8kszC3ZA" entityName="New Allocation">
+  <targetResourceEnvironment_Allocation href="newResourceEnvironment.resourceenvironment#/"/>
+  <system_Allocation href="newAssembly.system#_2F9v0GOKEei0NY8kszC3ZA"/>
+  <allocationContexts_Allocation id="_G6yn0GOfEei0NY8kszC3ZA" entityName="Allocation_PickUp Shop">
+    <resourceContainer_AllocationContext href="newResourceEnvironment.resourceenvironment#_IYj8cGOWEei0NY8kszC3ZA"/>
+    <assemblyContext_AllocationContext href="newAssembly.system#_HVExEGOUEei0NY8kszC3ZA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_IJIDMGOfEei0NY8kszC3ZA" entityName="Allocation_Assembly_Webservice::Inventory">
+    <resourceContainer_AllocationContext href="newResourceEnvironment.resourceenvironment#_IYj8cGOWEei0NY8kszC3ZA"/>
+    <assemblyContext_AllocationContext href="newAssembly.system#_U-_jYGOUEei0NY8kszC3ZA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_JHfI4GOfEei0NY8kszC3ZA" entityName="Allocation_Assembly_Tradingsystem::inventory:data">
+    <resourceContainer_AllocationContext href="newResourceEnvironment.resourceenvironment#_IYj8cGOWEei0NY8kszC3ZA"/>
+    <assemblyContext_AllocationContext href="newAssembly.system#_XccdQGOUEei0NY8kszC3ZA"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_KEF7EGOfEei0NY8kszC3ZA" entityName="Allocation_Assembly_Tradingsystem::inventory:application">
+    <resourceContainer_AllocationContext href="newResourceEnvironment.resourceenvironment#_IYj8cGOWEei0NY8kszC3ZA"/>
+    <assemblyContext_AllocationContext href="newAssembly.system#_Yp4gwGOUEei0NY8kszC3ZA"/>
+  </allocationContexts_Allocation>
+</allocation:Allocation>
