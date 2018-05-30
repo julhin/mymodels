@@ -1,0 +1,5 @@
+[0] Config.pm:340> INFO - This is Biber 2.4
+[0] Config.pm:343> INFO - Logfile is 'Assumptions.blg'
+[65] biber:287> INFO - === Mi Mai 30, 2018, 13:19:10
+[146] Utils.pm:163> ERROR - Cannot find control file 'Assumptions.bcf'! - did you pass the "backend=biber" option to BibLaTeX?
+[146] Biber.pm:113> INFO - ERRORS: 1
