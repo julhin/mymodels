@@ -4,9 +4,9 @@
     <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_IMPWsGOhEei0NY8kszC3ZA" entityName="IStockManagerInterface" providedInterface__OperationProvidedRole="_FSrvoGOhEei0NY8kszC3ZA"/>
     <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_QkOfsGN9Eei0NY8kszC3ZA" entityName="" requiredInterface__OperationRequiredRole="_ydzwoGN6Eei0NY8kszC3ZA"/>
     <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_LWJDEGPyEeiX4OZNgAATFw" describedService__SEFF="_JETSYGPpEeiX4OZNgAATFw">
-      <steps_Behaviour xsi:type="seff:InternalAction" id="_hkGKcGZMEeiuw82ZmoJ3Zw" entityName="InternalAction1" predecessor_AbstractAction="_k-yIoGZMEeiuw82ZmoJ3Zw" successor_AbstractAction="_lPoBAGZMEeiuw82ZmoJ3Zw"/>
-      <steps_Behaviour xsi:type="seff:StartAction" id="_k-yIoGZMEeiuw82ZmoJ3Zw" successor_AbstractAction="_hkGKcGZMEeiuw82ZmoJ3Zw"/>
-      <steps_Behaviour xsi:type="seff:StopAction" id="_lPoBAGZMEeiuw82ZmoJ3Zw" predecessor_AbstractAction="_hkGKcGZMEeiuw82ZmoJ3Zw"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_lPoBAGZMEeiuw82ZmoJ3Zw"/>
+      <steps_Behaviour xsi:type="seff:StartAction" id="_k-yIoGZMEeiuw82ZmoJ3Zw"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_1jg6MGeUEeir5fQ_o2-uLg" entityName="InternalAction1"/>
     </serviceEffectSpecifications__BasicComponent>
   </components__Repository>
   <components__Repository xsi:type="repository:BasicComponent" id="_5o5yQGNiEei0NY8kszC3ZA" entityName="Webservice::Inventory">
@@ -21,8 +21,9 @@
   <components__Repository xsi:type="repository:BasicComponent" id="_paPq8GNlEei0NY8kszC3ZA" entityName="Service Adapter">
     <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_hs3hAGOQEei0NY8kszC3ZA" entityName="" providedInterface__OperationProvidedRole="_NQhlMGN7Eei0NY8kszC3ZA"/>
     <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_ySLncGZDEeiuw82ZmoJ3Zw" describedService__SEFF="_N1PYMGPxEeiX4OZNgAATFw">
-      <steps_Behaviour xsi:type="seff:StartAction" id="_zIY2sGZDEeiuw82ZmoJ3Zw" successor_AbstractAction="_zIY2sWZDEeiuw82ZmoJ3Zw"/>
-      <steps_Behaviour xsi:type="seff:StopAction" id="_zIY2sWZDEeiuw82ZmoJ3Zw" predecessor_AbstractAction="_zIY2sGZDEeiuw82ZmoJ3Zw"/>
+      <steps_Behaviour xsi:type="seff:StartAction" id="_zIY2sGZDEeiuw82ZmoJ3Zw" successor_AbstractAction="_CTIncGeVEeir5fQ_o2-uLg"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_zIY2sWZDEeiuw82ZmoJ3Zw" predecessor_AbstractAction="_CTIncGeVEeir5fQ_o2-uLg"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_CTIncGeVEeir5fQ_o2-uLg" entityName="InternalAction1" predecessor_AbstractAction="_zIY2sGZDEeiuw82ZmoJ3Zw" successor_AbstractAction="_zIY2sWZDEeiuw82ZmoJ3Zw"/>
     </serviceEffectSpecifications__BasicComponent>
   </components__Repository>
   <components__Repository xsi:type="repository:BasicComponent" id="_v9MzEGOQEei0NY8kszC3ZA" entityName="Tradingsystem::inventory:data">
