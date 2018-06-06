@@ -3,6 +3,8 @@
 	<name>ModelsScenarioOne</name>
 	<comment></comment>
 	<projects>
+		<project>org.palladiosimulator.pcm.dataprocessing</project>
+		<project>org.palladiosimulator.pcm.dataprocessing.profile</project>
 	</projects>
 	<buildSpec>
 	</buildSpec>

@@ -1,21 +1,35 @@
 <?xml version="1.0" encoding="ASCII"?>
-<repository:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:seff="http://palladiosimulator.org/PalladioComponentModel/SEFF/5.2" id="_Qi69MGKCEei9j4VfREavAA" entityName="New Repository">
+<repository:Repository xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:seff="http://palladiosimulator.org/PalladioComponentModel/SEFF/5.2" xmlns:stoex="http://sdq.ipd.uka.de/StochasticExpressions/2.2" id="_Qi69MGKCEei9j4VfREavAA" entityName="New Repository">
   <components__Repository xsi:type="repository:BasicComponent" id="_GS09oGNXEei0NY8kszC3ZA" entityName="PickUp Shop">
     <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_IMPWsGOhEei0NY8kszC3ZA" entityName="IStockManagerInterface" providedInterface__OperationProvidedRole="_FSrvoGOhEei0NY8kszC3ZA"/>
     <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_QkOfsGN9Eei0NY8kszC3ZA" entityName="" requiredInterface__OperationRequiredRole="_ydzwoGN6Eei0NY8kszC3ZA"/>
     <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_LWJDEGPyEeiX4OZNgAATFw" describedService__SEFF="_JETSYGPpEeiX4OZNgAATFw">
-      <steps_Behaviour xsi:type="seff:StopAction" id="_lPoBAGZMEeiuw82ZmoJ3Zw"/>
-      <steps_Behaviour xsi:type="seff:StartAction" id="_k-yIoGZMEeiuw82ZmoJ3Zw"/>
-      <steps_Behaviour xsi:type="seff:InternalAction" id="_1jg6MGeUEeir5fQ_o2-uLg" entityName="InternalAction1"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_lPoBAGZMEeiuw82ZmoJ3Zw" predecessor_AbstractAction="_RVi0EGgAEeiv2d5O_fBJcw"/>
+      <steps_Behaviour xsi:type="seff:StartAction" id="_k-yIoGZMEeiuw82ZmoJ3Zw" successor_AbstractAction="_RVi0EGgAEeiv2d5O_fBJcw"/>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_RVi0EGgAEeiv2d5O_fBJcw" entityName="createReport" predecessor_AbstractAction="_k-yIoGZMEeiuw82ZmoJ3Zw" successor_AbstractAction="_lPoBAGZMEeiuw82ZmoJ3Zw" calledService_ExternalService="_Wf-icGPrEeiX4OZNgAATFw" role_ExternalService="_QkOfsGN9Eei0NY8kszC3ZA">
+        <inputVariableUsages__CallAction>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="id"/>
+        </inputVariableUsages__CallAction>
+        <returnVariableUsage__CallReturnAction>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="Report"/>
+        </returnVariableUsage__CallReturnAction>
+      </steps_Behaviour>
     </serviceEffectSpecifications__BasicComponent>
   </components__Repository>
   <components__Repository xsi:type="repository:BasicComponent" id="_5o5yQGNiEei0NY8kszC3ZA" entityName="Webservice::Inventory">
     <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_QCoOgGN9Eei0NY8kszC3ZA" entityName="IStoreManager" providedInterface__OperationProvidedRole="_ydzwoGN6Eei0NY8kszC3ZA"/>
     <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_YpxVYGN7Eei0NY8kszC3ZA" entityName="" requiredInterface__OperationRequiredRole="_LVjtUGN7Eei0NY8kszC3ZA"/>
     <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_rrIa8GZDEeiuw82ZmoJ3Zw" describedService__SEFF="_Wf-icGPrEeiX4OZNgAATFw">
-      <steps_Behaviour xsi:type="seff:StartAction" id="_tUMqgGZDEeiuw82ZmoJ3Zw" successor_AbstractAction="_4mwYgGZyEeiZS53nwzibXA"/>
-      <steps_Behaviour xsi:type="seff:StopAction" id="_tUNRkGZDEeiuw82ZmoJ3Zw" predecessor_AbstractAction="_4mwYgGZyEeiZS53nwzibXA"/>
-      <steps_Behaviour xsi:type="seff:InternalAction" id="_4mwYgGZyEeiZS53nwzibXA" entityName="InternalAction1" predecessor_AbstractAction="_tUMqgGZDEeiuw82ZmoJ3Zw" successor_AbstractAction="_tUNRkGZDEeiuw82ZmoJ3Zw"/>
+      <steps_Behaviour xsi:type="seff:StartAction" id="_tUMqgGZDEeiuw82ZmoJ3Zw" successor_AbstractAction="_l_rg0GgAEeiv2d5O_fBJcw"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_tUNRkGZDEeiuw82ZmoJ3Zw" predecessor_AbstractAction="_l_rg0GgAEeiv2d5O_fBJcw"/>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_l_rg0GgAEeiv2d5O_fBJcw" entityName="ExternalCallAction1" predecessor_AbstractAction="_tUMqgGZDEeiuw82ZmoJ3Zw" successor_AbstractAction="_tUNRkGZDEeiuw82ZmoJ3Zw" calledService_ExternalService="_BODDoGPwEeiX4OZNgAATFw" role_ExternalService="_YpxVYGN7Eei0NY8kszC3ZA">
+        <inputVariableUsages__CallAction>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="id"/>
+        </inputVariableUsages__CallAction>
+        <returnVariableUsage__CallReturnAction>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="Report"/>
+        </returnVariableUsage__CallReturnAction>
+      </steps_Behaviour>
     </serviceEffectSpecifications__BasicComponent>
   </components__Repository>
   <components__Repository xsi:type="repository:BasicComponent" id="_paPq8GNlEei0NY8kszC3ZA" entityName="Service Adapter">
@@ -23,26 +37,40 @@
     <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_ySLncGZDEeiuw82ZmoJ3Zw" describedService__SEFF="_N1PYMGPxEeiX4OZNgAATFw">
       <steps_Behaviour xsi:type="seff:StartAction" id="_zIY2sGZDEeiuw82ZmoJ3Zw" successor_AbstractAction="_CTIncGeVEeir5fQ_o2-uLg"/>
       <steps_Behaviour xsi:type="seff:StopAction" id="_zIY2sWZDEeiuw82ZmoJ3Zw" predecessor_AbstractAction="_CTIncGeVEeir5fQ_o2-uLg"/>
-      <steps_Behaviour xsi:type="seff:InternalAction" id="_CTIncGeVEeir5fQ_o2-uLg" entityName="InternalAction1" predecessor_AbstractAction="_zIY2sGZDEeiuw82ZmoJ3Zw" successor_AbstractAction="_zIY2sWZDEeiuw82ZmoJ3Zw"/>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_CTIncGeVEeir5fQ_o2-uLg" entityName="executeQuery" predecessor_AbstractAction="_zIY2sGZDEeiuw82ZmoJ3Zw" successor_AbstractAction="_zIY2sWZDEeiuw82ZmoJ3Zw"/>
     </serviceEffectSpecifications__BasicComponent>
   </components__Repository>
   <components__Repository xsi:type="repository:BasicComponent" id="_v9MzEGOQEei0NY8kszC3ZA" entityName="Tradingsystem::inventory:data">
     <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_BNnK8GOREei0NY8kszC3ZA" entityName="IStoreQuery" providedInterface__OperationProvidedRole="_7rsagGOQEei0NY8kszC3ZA"/>
     <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="_CE4KIGOREei0NY8kszC3ZA" entityName="" requiredInterface__OperationRequiredRole="_NQhlMGN7Eei0NY8kszC3ZA"/>
     <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_xBBhkGZDEeiuw82ZmoJ3Zw" describedService__SEFF="_M97yMGPwEeiX4OZNgAATFw">
-      <steps_Behaviour xsi:type="seff:StartAction" id="_xcv0QGZDEeiuw82ZmoJ3Zw" successor_AbstractAction="_GQTXYGZzEeiZS53nwzibXA"/>
-      <steps_Behaviour xsi:type="seff:StopAction" id="_xcv0QWZDEeiuw82ZmoJ3Zw" predecessor_AbstractAction="_FE4GEGZzEeiZS53nwzibXA"/>
-      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_FE4GEGZzEeiZS53nwzibXA" entityName="ExternalCallAction1" predecessor_AbstractAction="_GQTXYGZzEeiZS53nwzibXA" successor_AbstractAction="_xcv0QWZDEeiuw82ZmoJ3Zw" calledService_ExternalService="_N1PYMGPxEeiX4OZNgAATFw" role_ExternalService="_CE4KIGOREei0NY8kszC3ZA"/>
-      <steps_Behaviour xsi:type="seff:InternalAction" id="_GQTXYGZzEeiZS53nwzibXA" entityName="InternalAction1" predecessor_AbstractAction="_xcv0QGZDEeiuw82ZmoJ3Zw" successor_AbstractAction="_FE4GEGZzEeiZS53nwzibXA"/>
+      <steps_Behaviour xsi:type="seff:StartAction" id="_xcv0QGZDEeiuw82ZmoJ3Zw" successor_AbstractAction="_R2GQ0GkbEei5soyaYruJUw"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_xcv0QWZDEeiuw82ZmoJ3Zw" predecessor_AbstractAction="_R2GQ0GkbEei5soyaYruJUw"/>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_R2GQ0GkbEei5soyaYruJUw" entityName="ExternalCallAction1" predecessor_AbstractAction="_xcv0QGZDEeiuw82ZmoJ3Zw" successor_AbstractAction="_xcv0QWZDEeiuw82ZmoJ3Zw" calledService_ExternalService="_N1PYMGPxEeiX4OZNgAATFw" role_ExternalService="_CE4KIGOREei0NY8kszC3ZA">
+        <inputVariableUsages__CallAction>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="query"/>
+        </inputVariableUsages__CallAction>
+        <returnVariableUsage__CallReturnAction>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="List&lt;IOrderEntries>"/>
+        </returnVariableUsage__CallReturnAction>
+      </steps_Behaviour>
     </serviceEffectSpecifications__BasicComponent>
   </components__Repository>
   <components__Repository xsi:type="repository:BasicComponent" id="_xDUGkGOQEei0NY8kszC3ZA" entityName="Tradingsystem::inventory:application">
     <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_2idP0GOQEei0NY8kszC3ZA" entityName="IStoreInventoryManager" providedInterface__OperationProvidedRole="_LVjtUGN7Eei0NY8kszC3ZA"/>
     <requiredRoles_InterfaceRequiringEntity xsi:type="repository:OperationRequiredRole" id="__Yh4oGOQEei0NY8kszC3ZA" entityName="" requiredInterface__OperationRequiredRole="_7rsagGOQEei0NY8kszC3ZA"/>
     <serviceEffectSpecifications__BasicComponent xsi:type="seff:ResourceDemandingSEFF" id="_vihjQGZDEeiuw82ZmoJ3Zw" describedService__SEFF="_BODDoGPwEeiX4OZNgAATFw">
-      <steps_Behaviour xsi:type="seff:StartAction" id="_wXEloGZDEeiuw82ZmoJ3Zw" successor_AbstractAction="_-miwsGZyEeiZS53nwzibXA"/>
-      <steps_Behaviour xsi:type="seff:StopAction" id="_wXEloWZDEeiuw82ZmoJ3Zw" predecessor_AbstractAction="_-miwsGZyEeiZS53nwzibXA"/>
-      <steps_Behaviour xsi:type="seff:InternalAction" id="_-miwsGZyEeiZS53nwzibXA" entityName="InternalAction1" predecessor_AbstractAction="_wXEloGZDEeiuw82ZmoJ3Zw" successor_AbstractAction="_wXEloWZDEeiuw82ZmoJ3Zw"/>
+      <steps_Behaviour xsi:type="seff:StartAction" id="_wXEloGZDEeiuw82ZmoJ3Zw" successor_AbstractAction="_o3y9cGgAEeiv2d5O_fBJcw"/>
+      <steps_Behaviour xsi:type="seff:StopAction" id="_wXEloWZDEeiuw82ZmoJ3Zw" predecessor_AbstractAction="_rMC4AGgAEeiv2d5O_fBJcw"/>
+      <steps_Behaviour xsi:type="seff:ExternalCallAction" id="_o3y9cGgAEeiv2d5O_fBJcw" entityName="createReportQuery" predecessor_AbstractAction="_wXEloGZDEeiuw82ZmoJ3Zw" successor_AbstractAction="_rMC4AGgAEeiv2d5O_fBJcw" calledService_ExternalService="_M97yMGPwEeiX4OZNgAATFw" role_ExternalService="__Yh4oGOQEei0NY8kszC3ZA">
+        <inputVariableUsages__CallAction>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="id"/>
+        </inputVariableUsages__CallAction>
+        <returnVariableUsage__CallReturnAction>
+          <namedReference__VariableUsage xsi:type="stoex:VariableReference" referenceName="List&lt;IOrderEntries>"/>
+        </returnVariableUsage__CallReturnAction>
+      </steps_Behaviour>
+      <steps_Behaviour xsi:type="seff:InternalAction" id="_rMC4AGgAEeiv2d5O_fBJcw" entityName="assembleReport" predecessor_AbstractAction="_o3y9cGgAEeiv2d5O_fBJcw" successor_AbstractAction="_wXEloWZDEeiuw82ZmoJ3Zw"/>
     </serviceEffectSpecifications__BasicComponent>
   </components__Repository>
   <interfaces__Repository xsi:type="repository:OperationInterface" id="_ydzwoGN6Eei0NY8kszC3ZA" entityName="IStoreManager">
